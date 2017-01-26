@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		ABEAD1A8C18828EBAA15EA04 /* Pods_DevslopesSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFF5A6454A8092FF68B9F6D /* Pods_DevslopesSocial.framework */; };
 		F4359AE81E3A5FC300E83443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4359AE71E3A5FC300E83443 /* AppDelegate.swift */; };
-		F4359AEA1E3A5FC300E83443 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4359AE91E3A5FC300E83443 /* ViewController.swift */; };
+		F4359AEA1E3A5FC300E83443 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4359AE91E3A5FC300E83443 /* SignInVC.swift */; };
 		F4359AED1E3A5FC300E83443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4359AEB1E3A5FC300E83443 /* Main.storyboard */; };
 		F4359AEF1E3A5FC300E83443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4359AEE1E3A5FC300E83443 /* Assets.xcassets */; };
 		F4359AF21E3A5FC300E83443 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4359AF01E3A5FC300E83443 /* LaunchScreen.storyboard */; };
@@ -22,12 +22,12 @@
 		A738B5A358BB940AC03B7FB9 /* Pods-DevslopesSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevslopesSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevslopesSocial/Pods-DevslopesSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		F4359AE41E3A5FC300E83443 /* DevslopesSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevslopesSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4359AE71E3A5FC300E83443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4359AE91E3A5FC300E83443 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4359AE91E3A5FC300E83443 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		F4359AEC1E3A5FC300E83443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F4359AEE1E3A5FC300E83443 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4359AEE1E3A5FC300E83443 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = DevslopesSocial/Assets.xcassets; sourceTree = "<group>"; };
 		F4359AF11E3A5FC300E83443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F4359AF31E3A5FC300E83443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4359AF91E3A605000E83443 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4359AF31E3A5FC300E83443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = DevslopesSocial/Info.plist; sourceTree = "<group>"; };
+		F4359AF91E3A605000E83443 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "DevslopesSocial/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,15 +80,48 @@
 		F4359AE61E3A5FC300E83443 /* DevslopesSocial */ = {
 			isa = PBXGroup;
 			children = (
+				F4C95CE81E3A62F700F8787D /* Model */,
+				F4C95CE91E3A62FE00F8787D /* View */,
+				F4C95CEA1E3A630500F8787D /* Controller */,
+				F4C95CEB1E3A635A00F8787D /* Resources */,
 				F4359AE71E3A5FC300E83443 /* AppDelegate.swift */,
-				F4359AE91E3A5FC300E83443 /* ViewController.swift */,
-				F4359AEB1E3A5FC300E83443 /* Main.storyboard */,
-				F4359AEE1E3A5FC300E83443 /* Assets.xcassets */,
-				F4359AF01E3A5FC300E83443 /* LaunchScreen.storyboard */,
-				F4359AF31E3A5FC300E83443 /* Info.plist */,
-				F4359AF91E3A605000E83443 /* GoogleService-Info.plist */,
 			);
 			path = DevslopesSocial;
+			sourceTree = "<group>";
+		};
+		F4C95CE81E3A62F700F8787D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F4C95CE91E3A62FE00F8787D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4359AF01E3A5FC300E83443 /* LaunchScreen.storyboard */,
+				F4359AEB1E3A5FC300E83443 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F4C95CEA1E3A630500F8787D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4359AE91E3A5FC300E83443 /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F4C95CEB1E3A635A00F8787D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4359AF31E3A5FC300E83443 /* Info.plist */,
+				F4359AF91E3A605000E83443 /* GoogleService-Info.plist */,
+				F4359AEE1E3A5FC300E83443 /* Assets.xcassets */,
+			);
+			name = Resources;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4359AEA1E3A5FC300E83443 /* ViewController.swift in Sources */,
+				F4359AEA1E3A5FC300E83443 /* SignInVC.swift in Sources */,
 				F4359AE81E3A5FC300E83443 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +416,7 @@
 				F4359AF81E3A5FC300E83443 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

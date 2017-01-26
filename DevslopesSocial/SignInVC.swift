@@ -1,14 +1,6 @@
-//
-//  ViewController.swift
-//  DevslopesSocial
-//
-//  Created by Christine Cunniff on 1/26/17.
-//  Copyright © 2017 Christine Cunniff. All rights reserved.
-//
-
 import UIKit
 
-class ViewController: UIViewController {
+class SignInVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
