@@ -22,10 +22,13 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
    }
     
 
-//        let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
-//        print("CHRISTINE: ID removed from keychain \(keychainResult)")
-//        try! FIRAuth.auth()?.signOut()
-//        performSegue(withIdentifier: "goToSignIn", sender: nil)
+    @IBAction func signOutTapped(_ sender: Any) {
+        let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
+        print("CHRISTINE: ID removed from keychain \(keychainResult)")
+        try! FIRAuth.auth()?.signOut()
+        performSegue(withIdentifier: "goToSignIn", sender: nil)
+
+    }
    
    
 

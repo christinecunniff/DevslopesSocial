@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ABEAD1A8C18828EBAA15EA04 /* Pods_DevslopesSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFF5A6454A8092FF68B9F6D /* Pods_DevslopesSocial.framework */; };
+		F423A7A41E3BDB5E00D16CF9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F423A7A31E3BDB5E00D16CF9 /* DataService.swift */; };
 		F4359AE81E3A5FC300E83443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4359AE71E3A5FC300E83443 /* AppDelegate.swift */; };
 		F4359AEA1E3A5FC300E83443 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4359AE91E3A5FC300E83443 /* SignInVC.swift */; };
 		F4359AED1E3A5FC300E83443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4359AEB1E3A5FC300E83443 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		18F7E83DC83AFBCFFF0A8E87 /* Pods-DevslopesSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevslopesSocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevslopesSocial/Pods-DevslopesSocial.release.xcconfig"; sourceTree = "<group>"; };
 		6FFF5A6454A8092FF68B9F6D /* Pods_DevslopesSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevslopesSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A738B5A358BB940AC03B7FB9 /* Pods-DevslopesSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevslopesSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevslopesSocial/Pods-DevslopesSocial.debug.xcconfig"; sourceTree = "<group>"; };
+		F423A7A31E3BDB5E00D16CF9 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		F4359AE41E3A5FC300E83443 /* DevslopesSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevslopesSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4359AE71E3A5FC300E83443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4359AE91E3A5FC300E83443 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F423A7A21E3BDB3500D16CF9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F423A7A31E3BDB5E00D16CF9 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		F4359ADB1E3A5FC300E83443 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +106,7 @@
 		F4359AE61E3A5FC300E83443 /* DevslopesSocial */ = {
 			isa = PBXGroup;
 			children = (
+				F423A7A21E3BDB3500D16CF9 /* Services */,
 				F4C95CEE1E3A801A00F8787D /* Util */,
 				F4C95CE81E3A62F700F8787D /* Model */,
 				F4C95CE91E3A62FE00F8787D /* View */,
@@ -286,6 +297,7 @@
 				F4359AEA1E3A5FC300E83443 /* SignInVC.swift in Sources */,
 				F4C95CF21E3A82AE00F8787D /* RoundButton.swift in Sources */,
 				F4C95CF61E3A855B00F8787D /* FancyButton.swift in Sources */,
+				F423A7A41E3BDB5E00D16CF9 /* DataService.swift in Sources */,
 				F46BDC811E3B98D4000E349F /* FeedVC.swift in Sources */,
 				F4359AE81E3A5FC300E83443 /* AppDelegate.swift in Sources */,
 				F4C95CED1E3A7EEF00F8787D /* FancyView.swift in Sources */,
