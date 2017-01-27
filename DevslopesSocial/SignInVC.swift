@@ -14,6 +14,12 @@ class SignInVC: UIViewController {
         
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            performSegue(withIdentifier: "goToFeed", sender: nil)
+        }
+    }
+    
     @IBAction func facebookBtnTapped(_ sender: Any) {
         
         let facebookLogin = FBSDKLoginManager()
@@ -71,6 +77,7 @@ class SignInVC: UIViewController {
     func completeSignIn(id: String) {
         let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("CHRISTINE: Data saved to keychain \(keychainResult)")
+        performSegue(withIdentifier: "goToFeed", sender: nil)
     }
     
     
